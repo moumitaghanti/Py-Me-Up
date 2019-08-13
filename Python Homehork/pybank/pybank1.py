@@ -63,9 +63,9 @@ with open(output_file, 'w') as filewriter:
     filewriter.write("-------------------------------------------------------\n")
     filewriter.write(f"Total Months: {cnt}\n")
     filewriter.write(f"Total Revenue: {round(total)} USD\n")
-    filewriter.write(f"Average Revenue Change: {round(average_revenue_change,2)} USD\n")
-    filewriter.write(f"Greatest Increase in Revenue: {date_rev[date_max]} ({round(maxrev)} USD)\n")
-    filewriter.write(f"Greatest Decrease in Revenue: {date_rev[date_min]} ({round(minrev)} USD)\n")
+    filewriter.write(f"Average Revenue Change: ${round(average_revenue_change,2)} \n")
+    filewriter.write(f"Greatest Increase in Revenue: {date_rev[date_max]} (${round(maxrev)} )\n")
+    filewriter.write(f"Greatest Decrease in Revenue: {date_rev[date_min]} (${round(minrev)} )\n")
     filewriter.write("")
 
     filewriter.close()    
